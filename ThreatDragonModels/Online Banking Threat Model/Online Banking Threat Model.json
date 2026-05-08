@@ -125,7 +125,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Webmaster",
-              "description": "",
+              "description": "Admin who handles public web interface",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -145,7 +145,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Non Cstomer Visitor"
+                "text": "Non Customer Visitor"
               },
               "body": {
                 "stroke": "#333333",
@@ -241,14 +241,21 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Actor",
-              "name": "Non Customer Visitor",
-              "description": "",
+              "name": "Visitor",
+              "description": "basically anyone who simply visits public web pages",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {

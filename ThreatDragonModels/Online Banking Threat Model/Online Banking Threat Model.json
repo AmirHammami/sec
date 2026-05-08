@@ -1,0 +1,16 @@
+{
+  "version": "2.6.1",
+  "summary": {
+    "title": "Online Banking Threat Model",
+    "owner": "Amir",
+    "description": "A bank that is developping a new online application.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}

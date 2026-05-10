@@ -1759,6 +1759,48 @@
             ]
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Restricted Net Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Restricted Net Boundary"
+            ],
+            "id": "d94a19ff-eff6-43ff-bb8a-64b95ea34c9b",
+            "source": {
+              "x": 539,
+              "y": -10
+            },
+            "target": {
+              "x": 670,
+              "y": 390
+            },
+            "vertices": [
+              {
+                "x": 590,
+                "y": 50
+              },
+              {
+                "x": 640,
+                "y": 100
+              },
+              {
+                "x": 670,
+                "y": 170
+              }
+            ]
+          },
+          {
             "position": {
               "x": 715,
               "y": 279.0000000000001

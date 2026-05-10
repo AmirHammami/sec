@@ -1134,7 +1134,17 @@
                 "x": 640,
                 "y": 20
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1779,24 +1789,24 @@
             "id": "d94a19ff-eff6-43ff-bb8a-64b95ea34c9b",
             "source": {
               "x": 539,
-              "y": -10
+              "y": -30
             },
             "target": {
               "x": 670,
-              "y": 390
+              "y": 370
             },
             "vertices": [
               {
-                "x": 590,
-                "y": 50
+                "x": 620,
+                "y": -50
               },
               {
                 "x": 640,
-                "y": 100
+                "y": 10
               },
               {
                 "x": 670,
-                "y": 170
+                "y": 80
               }
             ]
           },

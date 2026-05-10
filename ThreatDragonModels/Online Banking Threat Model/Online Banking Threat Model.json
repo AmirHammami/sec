@@ -1033,6 +1033,62 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Confirmation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Confirmation"
+            ],
+            "id": "807a1e0b-fc01-47e3-bc37-8b9031a5d806",
+            "source": {
+              "x": 400,
+              "y": 60
+            },
+            "target": {
+              "cell": "8c1c1f48-9fbb-4dbf-9f53-543b1cac7849",
+              "port": "3878c471-3b0a-4236-8f1d-c5bad146fa94"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 100
+              },
+              {
+                "x": 290,
+                "y": 100
+              }
+            ]
+          },
+          {
             "position": {
               "x": 715,
               "y": 279.0000000000001

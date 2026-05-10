@@ -272,6 +272,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -355,7 +356,6 @@
               ]
             },
             "id": "2b795079-eec7-4eaf-b674-c9d7c5cb25d6",
-            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -389,6 +389,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -472,7 +473,6 @@
               ]
             },
             "id": "395aaebc-c229-4a56-a168-1f54cf2eded7",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Public Website",
@@ -509,6 +509,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -592,7 +593,6 @@
               ]
             },
             "id": "9805b7a7-11d3-4fb5-a54c-ca926f0e6269",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "Authentication",
@@ -629,6 +629,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -712,7 +713,6 @@
               ]
             },
             "id": "5e56fde1-b8a4-44a7-9f69-93dce92752b7",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "Transactions",
@@ -752,6 +752,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -835,7 +836,6 @@
               ]
             },
             "id": "84c1f527-8cfd-4cf8-823c-5501ea8643f6",
-            "zIndex": 9,
             "data": {
               "type": "tm.Store",
               "name": "Public Webpages",
@@ -876,6 +876,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -959,7 +960,6 @@
               ]
             },
             "id": "1e131397-9700-48cb-92b3-37b3b4b45c1b",
-            "zIndex": 10,
             "data": {
               "type": "tm.Store",
               "name": "Authentication DB",
@@ -975,6 +975,62 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Code Edit",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Code Edit"
+            ],
+            "id": "4f5279ee-5a02-4681-bc57-cd2b7b2943cc",
+            "source": {
+              "x": 191,
+              "y": 78
+            },
+            "target": {
+              "cell": "395aaebc-c229-4a56-a168-1f54cf2eded7",
+              "port": "96ae2887-9f29-4ae8-bc80-5e53ab614559"
+            },
+            "vertices": [
+              {
+                "x": 270,
+                "y": 40
+              },
+              {
+                "x": 330,
+                "y": 40
+              }
+            ]
           },
           {
             "position": {
@@ -1000,6 +1056,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1083,7 +1140,6 @@
               ]
             },
             "id": "33dabc02-538d-4e6e-a8eb-1536aa29e7e0",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "Transaction DB",

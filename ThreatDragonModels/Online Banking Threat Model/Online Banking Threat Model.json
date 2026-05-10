@@ -1089,6 +1089,58 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Requests",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Requests"
+            ],
+            "id": "d50de62f-5d41-4199-914f-1bfd5d883cf7",
+            "source": {
+              "x": 529,
+              "y": 50
+            },
+            "target": {
+              "cell": "84c1f527-8cfd-4cf8-823c-5501ea8643f6",
+              "port": "f04a4324-25ba-42a1-b941-5d1ebcdfad43"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 20
+              }
+            ]
+          },
+          {
             "position": {
               "x": 715,
               "y": 279.0000000000001

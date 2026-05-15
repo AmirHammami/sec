@@ -520,8 +520,8 @@
                 "text": "Authentication"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -618,29 +618,15 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "8acccafa-3e57-49a4-b407-e2ae411d5362",
-                  "title": "Data Manipulation",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "Attackers modify or manipulate stored data",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 5,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 2,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -1058,13 +1044,6 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {

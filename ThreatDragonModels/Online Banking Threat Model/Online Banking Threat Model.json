@@ -139,7 +139,7 @@
                   "severity": "High",
                   "type": "Spoofing",
                   "description": "Threat actors impersonate the legitimate users such as web admin or customers to gain unauthorized access.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "- Implement MFA to verify user IDs\n- User CPATCHA to prevent automated attacks\n- Regulary cycle authentication tokens",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
@@ -147,9 +147,16 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1735,6 +1742,11 @@
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",

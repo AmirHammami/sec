@@ -1,5 +1,5 @@
 {
-  "version": "2.6.2-RC1",
+  "version": "2.6.2",
   "summary": {
     "title": "Online Banking Threat Model",
     "owner": "Amir",
@@ -15,7 +15,7 @@
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.6.2-RC1",
+        "version": "2.6.2",
         "cells": [
           {
             "position": {
@@ -1147,12 +1147,6 @@
               "cell": "84c1f527-8cfd-4cf8-823c-5501ea8643f6",
               "port": "f04a4324-25ba-42a1-b941-5d1ebcdfad43"
             },
-            "vertices": [
-              {
-                "x": 640,
-                "y": 20
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -1162,7 +1156,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 20
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1220,7 +1220,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1241,13 +1242,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "e3f45edc-3280-4a47-ac95-c618b8f6b3b8",
+                  "title": "HTTP Response Manipulation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers manipulate HTTP responses",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTP Response"
@@ -1269,8 +1289,22 @@
               {
                 "x": 310,
                 "y": 160
+              },
+              {
+                "x": 280,
+                "y": 160
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1649,6 +1683,16 @@
               "cell": "395aaebc-c229-4a56-a168-1f54cf2eded7",
               "port": "96ae2887-9f29-4ae8-bc80-5e53ab614559"
             },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            },
             "vertices": [
               {
                 "x": 240,
@@ -1666,17 +1710,7 @@
                 "x": 350,
                 "y": 100
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -1987,6 +2021,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 3
   }
 }

@@ -626,7 +626,7 @@
               "threats": [
                 {
                   "id": "8acccafa-3e57-49a4-b407-e2ae411d5362",
-                  "title": "Data Exposed",
+                  "title": "Data Manipulation",
                   "status": "Open",
                   "severity": "High",
                   "type": "Tampering",
@@ -640,7 +640,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,

@@ -1633,7 +1633,7 @@
                   "severity": "High",
                   "type": "Information disclosure",
                   "description": "Sensitive data is intercepted or leaked during transmission to unauthorized parties",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "- Encrypt data in transit\n- Avoid sending sensitive data in URL params",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
@@ -1643,7 +1643,7 @@
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },

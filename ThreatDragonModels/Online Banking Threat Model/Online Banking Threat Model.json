@@ -150,13 +150,6 @@
                 "spoofing": 2,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1679,105 +1672,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "HTTP Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "c1afc8da-5ca1-44dc-9a4c-76717f311d98",
-                  "title": "HTTP Request Manipulation",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Attackers manipulate HTTP requests:\nParameter Tampering — modifying URL parameters, form fields, cookies, or hidden values.\nHTTP Header Injection — altering HTTP headers like Host, User-Agent, or X-Forwarded-For.\nRequest Smuggling — exploiting differences in how servers interpret HTTP requests.\nSession Manipulation / Cookie Tampering — changing session identifiers or cookies.\nAPI Request Tampering — modifying API calls to bypass validation or authorization.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 2,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "HTTP Request"
-            ],
-            "id": "9661c991-7024-49ac-8394-c61abdbf5727",
-            "source": {
-              "x": 191,
-              "y": 178
-            },
-            "target": {
-              "cell": "395aaebc-c229-4a56-a168-1f54cf2eded7",
-              "port": "96ae2887-9f29-4ae8-bc80-5e53ab614559"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
-            "vertices": [
-              {
-                "x": 240,
-                "y": 140
-              },
-              {
-                "x": 270,
-                "y": 120
-              },
-              {
-                "x": 300,
-                "y": 120
-              },
-              {
-                "x": 350,
-                "y": 100
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -1951,6 +1845,90 @@
               {
                 "x": 670,
                 "y": 80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "c1afc8da-5ca1-44dc-9a4c-76717f311d98",
+                  "title": "HTTP Request Manipulation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers manipulate HTTP requests:",
+                  "mitigation": "- Implement input validation and output encoding\n- Use Web App Firewalls (WAFs)\n- Follow secure coding practicies",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTP Request"
+            ],
+            "id": "9661c991-7024-49ac-8394-c61abdbf5727",
+            "source": {
+              "x": 191,
+              "y": 178
+            },
+            "target": {
+              "cell": "395aaebc-c229-4a56-a168-1f54cf2eded7",
+              "port": "96ae2887-9f29-4ae8-bc80-5e53ab614559"
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 140
+              },
+              {
+                "x": 270,
+                "y": 120
+              },
+              {
+                "x": 300,
+                "y": 120
+              },
+              {
+                "x": 350,
+                "y": 100
               }
             ]
           },
